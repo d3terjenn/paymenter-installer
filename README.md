@@ -12,7 +12,6 @@ An advanced installation and management script for Paymenter, featuring automate
 [Features](#✨-features) •
 [Prerequisites](#📋-prerequisites) •
 [Installation](#💾-installation) •
-[Documentation](#📖-documentation) •
 [Support](#💬-support)
 
 </div>
@@ -45,61 +44,13 @@ An advanced installation and management script for Paymenter, featuring automate
 
 1. **Download the script**:
 ```bash
-curl -o paymenter-manager.sh https://raw.githubusercontent.com/ckysuri/Paymenter-Install-Script/refs/heads/main/paymenter-manager.sh
+curl -L -o paymenter-installer.sh https://github.com/d3terjenn/paymenter-installer/releases/download/1.0.0/paymenter-installer.sh
 ```
 
 2. **Run the script**:
 ```bash
 sudo bash paymenter-installer.sh
 ```
-
-## 📖 Documentation
-
-### Directory Structure
-
-```
-/var/www/paymenter          # Main application directory
-/var/www/paymenter_backups  # Backup storage
-/var/log/paymenter-install.log  # Installation logs
-```
-
-### Log Files
-
-- Installation logs: `/var/log/paymenter-install.log`
-- Nginx logs: `/var/log/nginx/`
-- PHP-FPM logs: `/var/log/php8.2-fpm.log`
-
-### Service Management
-
-```bash
-# Restart Paymenter services
-systemctl restart paymenter.service
-
-# Check service status
-systemctl status paymenter.service
-
-# View logs
-journalctl -u paymenter.service
-```
-
-## 🛠️ Troubleshooting
-
-### Common Issues
-
-1. **Installation Fails**
-   - Check system requirements
-   - Verify internet connectivity
-   - Review logs at `/var/log/paymenter-install.log`
-
-2. **Database Connection Issues**
-   - Verify MySQL service is running
-   - Check database credentials in `.env`
-   - Ensure proper permissions
-
-3. **Web Server Issues**
-   - Check Nginx configuration
-   - Verify PHP-FPM is running
-   - Review Nginx error logs
 
 ## 💬 Support
 
