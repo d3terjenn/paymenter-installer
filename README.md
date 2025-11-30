@@ -6,7 +6,7 @@
 ![Tested on Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?style=flat&logo=ubuntu&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-An advanced installation and management script for Paymenter, featuring automated installation, updates, backups, and removal capabilities.
+An advanced installation script for Paymenter, featuring automated installation.
 
 [Features](#✨-features) •
 [Prerequisites](#📋-prerequisites) •
@@ -19,6 +19,7 @@ An advanced installation and management script for Paymenter, featuring automate
 
 - 🔄 **One-Click Installation**: Automated installation process with all dependencies
 - 🔒 **SSL/TLS Ready**: Built-in support for domain configuration and SSL
+- 💾 **Database Ready**: Built-in support for configuration database
 - 🛡️ **Secure Configuration**: Proper security settings and permissions out of the box
 - 📦 **Service Management**: Integrated service configuration and management
 - 📝 **Detailed Logging**: Comprehensive logging of all operations
