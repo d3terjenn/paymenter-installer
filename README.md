@@ -1,4 +1,4 @@
-# 🚀 Paymenter Management Script
+# 🚀 Paymenter Installer Script
 
 <div align="center">
 
