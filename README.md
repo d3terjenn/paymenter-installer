@@ -1,1 +1,118 @@
-# paymenter-installer
+# 🚀 Paymenter Management Script
+
+<div align="center">
+
+![Version](https://img.shields.io/badge/version-1.2.0-blue.svg?cacheSeconds=2592000)
+![Tested on Ubuntu](https://img.shields.io/badge/Ubuntu-20.04%20%7C%2022.04-E95420?style=flat&logo=ubuntu&logoColor=white)
+![Tested on Debian](https://img.shields.io/badge/Debian-10%20%7C%2011-A81D33?style=flat&logo=debian&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+An advanced installation and management script for Paymenter, featuring automated installation, updates, backups, and removal capabilities.
+
+[Features](#✨-features) •
+[Prerequisites](#📋-prerequisites) •
+[Installation](#💾-installation) •
+[Documentation](#📖-documentation) •
+[Support](#💬-support)
+
+</div>
+
+## ✨ Features
+
+- 🔄 **One-Click Installation**: Automated installation process with all dependencies
+- 🛡️ **Secure Configuration**: Proper security settings and permissions out of the box
+- 🔒 **SSL/TLS Ready**: Built-in support for domain configuration and SSL
+- 📦 **Service Management**: Integrated service configuration and management
+- 🔄 **Easy Updates**: Both automatic and manual update options
+- 💾 **Backup System**: Integrated backup functionality for files and database
+- 🧹 **Clean Removal**: Complete system cleanup option
+- 📝 **Detailed Logging**: Comprehensive logging of all operations
+
+## 📋 Prerequisites
+
+- **Supported Operating Systems**:
+  - Ubuntu 20.04 LTS
+  - Ubuntu 22.04 LTS
+  - Debian 10
+  - Debian 11
+- **Root Access**: Root privileges are required
+- **Minimum Requirements**:
+  - 1 CPU Core
+  - 2GB RAM
+  - 10GB Storage
+
+## 💾 Installation
+
+1. **Download the script**:
+```bash
+curl -o paymenter-manager.sh https://raw.githubusercontent.com/ckysuri/Paymenter-Install-Script/refs/heads/main/paymenter-manager.sh
+```
+
+2. **Run the script**:
+```bash
+sudo bash paymenter-installer.sh
+```
+
+## 📖 Documentation
+
+### Directory Structure
+
+```
+/var/www/paymenter          # Main application directory
+/var/www/paymenter_backups  # Backup storage
+/var/log/paymenter-install.log  # Installation logs
+```
+
+### Log Files
+
+- Installation logs: `/var/log/paymenter-install.log`
+- Nginx logs: `/var/log/nginx/`
+- PHP-FPM logs: `/var/log/php8.2-fpm.log`
+
+### Service Management
+
+```bash
+# Restart Paymenter services
+systemctl restart paymenter.service
+
+# Check service status
+systemctl status paymenter.service
+
+# View logs
+journalctl -u paymenter.service
+```
+
+## 🛠️ Troubleshooting
+
+### Common Issues
+
+1. **Installation Fails**
+   - Check system requirements
+   - Verify internet connectivity
+   - Review logs at `/var/log/paymenter-install.log`
+
+2. **Database Connection Issues**
+   - Verify MySQL service is running
+   - Check database credentials in `.env`
+   - Ensure proper permissions
+
+3. **Web Server Issues**
+   - Check Nginx configuration
+   - Verify PHP-FPM is running
+   - Review Nginx error logs
+
+## 💬 Support
+
+- 📫 **Issues**: Create an issue in this repository
+- 📝 **Feature Requests**: Open a discussion
+- 🤝 **Contributing**: Pull requests are welcome
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+Made with ❤️ for the Paymenter community
+</div>
