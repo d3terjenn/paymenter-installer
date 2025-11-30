@@ -3,8 +3,7 @@
 <div align="center">
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
-![Tested on Ubuntu](https://img.shields.io/badge/Ubuntu-20.04%20%7C%2022.04-E95420?style=flat&logo=ubuntu&logoColor=white)
-![Tested on Debian](https://img.shields.io/badge/Debian-10%20%7C%2011-A81D33?style=flat&logo=debian&logoColor=white)
+![Tested on Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20%7C%2022.04-E95420?style=flat&logo=ubuntu&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An advanced installation and management script for Paymenter, featuring automated installation, updates, backups, and removal capabilities.
@@ -30,8 +29,11 @@ An advanced installation and management script for Paymenter, featuring automate
 - **Supported Operating Systems**:
   - Ubuntu 20.04 LTS
   - Ubuntu 22.04 LTS
+  - Ubuntu 24.04 LTS
   - Debian 10
   - Debian 11
+  - CentOS 7
+  - CentOS 8
 - **Root Access**: Root privileges are required
 - **Minimum Requirements**:
   - 1 CPU Core
