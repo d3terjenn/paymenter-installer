@@ -3,7 +3,7 @@
 <div align="center">
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
-![Tested on Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20%7C%2022.04-E95420?style=flat&logo=ubuntu&logoColor=white)
+![Tested on Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?style=flat&logo=ubuntu&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 An advanced installation and management script for Paymenter, featuring automated installation, updates, backups, and removal capabilities.
